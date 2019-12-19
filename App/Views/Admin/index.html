@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row text-center">
+
+    <div class="col-md-6 my-3">
+        <div class="card">
+            <div class="dashboard-card-stats-header card-header bg-dark text-white"><h1 class="">Posts</h1></div>
+            <div class="card-body">
+
+                
+                <h2><i class="far fa-clipboard fa-3x text-primary " >&nbsp;{{ stats.postsCount }}</i></h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 my-3">
+            <div class="card">
+                    <div class="dashboard-card-stats-header  card-header bg-dark text-white"><h1 class="">Categories</h1></div>
+                <div class="card-body">
+    
+                        
+                        
+                        <h2 class="text-center"><i class="far fa-folder-open fa-3x text-primary" >&nbsp;<span class="ml-auto">{{ stats.categoriesCount }}</span></i></h2>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-md-6 my-3">
+        <div class="card">
+                <div class="dashboard-card-stats-header  card-header bg-dark text-white"><h1 class="">Users</h1></div>
+            <div class="card-body">
+                    
+                    <h2><i class="far fa-user fa-3x text-primary" >&nbsp;{{ stats.usersCount }}</i></h2>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 my-3">
+        <div class="card">
+                <div class="dashboard-card-stats-header  card-header bg-dark text-white"><h1 class="">Comments</h1></div>
+            <div class="card-body">
+
+                    
+                    
+                    <h2 class="text-center"><i class="far fa-comments fa-3x text-primary" >&nbsp;<span class="ml-auto">{{ stats.commentsCount }}</span></i></h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block sidebar %}
+
+{% include "Admin/sidebarmenu.html" %}
+
+{% endblock %}

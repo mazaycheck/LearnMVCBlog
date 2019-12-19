@@ -1,0 +1,41 @@
+<div id="top-bar">
+
+</div>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg py-0 px-3">
+        <button class="navbar-toggler px-0 my-2" data-toggle="collapse" data-target="#collapse-menu">
+            <span class=""><i class="fas fa-bars text-white   "></i></span>
+        </button>
+        <div id="collapse-menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a href="/index" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/admin/dashboard" class="nav-link">Admin</a></li>
+                
+                {% if currentuser %}
+                    <li class="nav-item nav-link text-warning"> Hello {{ currentuser }}</li>
+                    <li class="nav-item"><a href="/account/logout" class="nav-link">Log out</a></li>
+                {% else %}
+                <li class="nav-item"><a href="/account/signup" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="/account/login" class="nav-link">Log-In</a></li>
+                {% endif %}
+     
+                
+                
+                </ul>
+            <form action="" class="ml-auto py-3">
+                <div class="input-group">
+
+                    <input type="text" placeholder="search">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <input type="submit" value="GO">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+</nav>
+
+
+

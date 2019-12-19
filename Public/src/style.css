@@ -1,0 +1,92 @@
+#top-bar{
+    height: 10vh;
+    background: brown;
+}
+
+#navbar{
+    background-color: rgba(59, 0, 56, 0.493);
+    font-family: 'Tomorrow', sans-serif;
+    color:white;
+    font-weight: 400;
+    list-style: none;
+}
+
+.nav-link{
+    color:white;
+}
+
+.navbar-toggler-icon{
+    color:white;
+}
+
+.navbar-toggler{
+    width: 35px!important;
+}
+
+body{
+    background-color: rgb(194, 202, 209);
+}
+
+.topstories-block{
+    height: 70px;
+    
+    width: 100%;
+
+
+}
+
+.topstories-block-content{
+    background: rgb(147, 95, 160);
+    width: 100%;
+    height: 100%;
+}
+
+#section-hot-posts{
+    width: 100%;
+    min-height: 500px;
+    
+
+}
+
+#section-hot-posts-content{
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+#sidebar-section{
+    width: 100%;
+    height: 900px;
+    
+    background: rgb(68, 131, 190);
+}
+
+
+.section-small-blocks-posts{
+    width: 100%;
+    height: 200px;
+    
+    background: rgb(154, 230, 179);
+}
+
+.section-small-blocks-posts-content{
+    width: 100%;
+    height: 100%;
+    
+    background: rgb(28, 56, 37);
+}
+
+#section-recent-posts{
+    width: 100%;
+    height: 400px;
+    
+
+}
+
+#section-recent-posts-content{
+    width: 100%;
+    height: 100%;
+    
+    background: darkslateblue;
+}

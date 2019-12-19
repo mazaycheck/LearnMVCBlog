@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="" method="post" class="p-3">
+    <input type="hidden" name="id" value={{ user.id }}>
+    <label for="">User</label>
+    <input type="text" id="" name="name" class="form-control my-2" value={{ user.name }}>
+    <p class="text-danger">{{ errors.nameError }}</p>
+    <label for="">Email</label>
+    <input type="email" id="" name="email"  class="form-control my-2" {% if user %}disabled{% endif %}
+     value={{ user.email }}>
+    <p class="text-danger">{{ errors.emailError }}</p>
+    
+    <label for="">Status</label>
+    <select name="statuslevel" class="form-control">
+        {% for status in statuslist %}
+            <option value="{{ status.level }}" {% if user.statuslevel == status.level %}selected{% endif %}
+             >{{ status.status }}</option>
+        {% endfor %}
+    </select>
+
+    <input type="submit" name="submit" class="btn btn-primary my-2" value="update user">
+    <a href="/admin/manageusers/resetpassword/{{ user.id }}" class="btn btn-warning">reset password</a>
+</form>
+
+{% endblock %}
+
+
+
+{% block sidebar %}
+{% include "Admin/sidebarmenu.html" %}
+{% endblock %}

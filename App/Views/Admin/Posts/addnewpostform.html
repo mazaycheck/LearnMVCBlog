@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card text-left my-3">
+
+  
+  <div class="card-header">Add New Post</div>
+  <div class="card-body">
+    <form action="" method="post">
+        <div class="form-group">
+            <label for="inp-title">Title</label>
+            <input type="text" name="title" class="form-control"   {% if postdata %} value={{ postdata.title }}{% endif %}>
+        </div>
+        <div class="form-group">
+            <label for="inp-text">Text</label>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                {% if postdata %}
+                    {{ postdata.text }}
+                {% endif %}
+                
+            </textarea>
+            <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+
+                CKEDITOR.replace( 'editor1' );
+            </script>
+        </div>
+        <div class="form-group">
+
+            <input type="hidden" value="" name="author">
+            <label for="inp-category">Category</label>
+            <select name="category" id="inp-category">
+                {% for cat in categories %}
+                <option value="{{ cat.id }}" 
+                {% if postdata  %}
+
+                    {% if postdata.category_id == cat.id  %}selected{% endif %}
+                    
+                {% endif %}
+                
+                >{{ cat.category }}</option>
+                    
+                {% endfor %}
+            </select>
+
+            <label for="inp-author">Author</label>
+            <select name="author" id="inp-author">
+                {% for auth in authors %}
+                <option value="{{ auth.id }}">{{ auth.name }}</option>
+                    
+                {% endfor %}
+            </select>
+        </div>
+        <input type="submit" name="submit" id="" class="btn btn-outline-info" value="save">
+        <a href="/admin/manageposts" class="btn btn-outline-danger">cancel</a>
+    </form>
+    <h4 class="card-title"></h4>
+    <p class="card-text"></p>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+    {% include "Admin/sidebarmenu.html" %}
+{% endblock %}

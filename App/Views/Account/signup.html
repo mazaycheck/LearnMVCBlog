@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+
+    #signup-form{
+        background: rgba(191, 231, 173, 0.493);
+        padding : 1.5rem;
+    }
+</style>
+
+
+<h1 id="test-hide">Sign UP</h1>
+
+
+<h3>{{ result }}</h3>
+
+
+
+<form id="signup-form" action="/account/signup/" method="post">
+
+<label for="inp-name">Name</label>
+<input id="inp-name" name="name" type="text" class="form-control" value="{{ inputdata.name }}" required>
+<div class="text-danger">{{ errors.nameError }}</div>
+<br>
+
+<label for="inp-email">Email</label>
+<input id="inp-email" name="email" type="email" class="form-control" value="{{ inputdata.email }}" required>
+<div class="text-danger">{{ errors.emailError }}</div>
+
+<br>
+
+<label for="inp-password1">Password</label>
+<input id="inp-password1" name="password" type="password" class="form-control">
+<div class="text-danger">{{ errors.passwordError }}</div>
+<br>
+
+<label for="inp-password2">Repeat Password</label>
+<input id="inp-password2" name="password2" type="password" class="form-control">
+<br>
+
+<input type="submit" name="submit" class="btn btn-outline-info">
+
+</form>
+
+<script>
+    $.validator.addMethod('passwordvalidate', function(value, element, param){
+        if(value != ''){
+            if(value.match(/.*\d{1,}.*/) == null){
+                return false;
+            }
+            if(value.match(/.*[a-z]+.*/i) == null){
+                return false;
+            }
+            return true;
+        }        
+    }, 'Must contain at least 1 number and 1 letter!');
+        
+    $(document).ready(function(){
+
+        $('#signup-form').validate(
+            {
+                rules: {
+                    name    : 'required',
+                    email   : {
+                        required: true,
+                        email   : true,
+                        remote  : "/account/validateemailadress"
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        passwordvalidate: true
+                    },
+                    password2:{
+                        equalTo: '#inp-password1'
+                    }
+                }, messages : {
+                    email: {
+                        remote :"email already exists"
+                    }
+                }
+            }
+        ); 
+    });
+</script>
+
+
+{% endblock %}
+{% block sidebar %}
+
+<div id="sidebar-section" class="mt-3 mt-md-0">
+
+</div>
+
+{% endblock %}

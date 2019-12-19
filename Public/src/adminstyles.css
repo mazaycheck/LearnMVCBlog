@@ -1,0 +1,19 @@
+.menu-link{
+    text-decoration: none!important; 
+    color: black!important;
+    font-weight: 600;
+    transition: all 0.2s;
+
+}
+.menu-link:hover{
+    color: rgb(21, 117, 124)!important;
+    border-left: solid 3px rgb(21, 117, 124) ;
+}
+
+.menu-card-header{
+    background: rgb(30, 53, 71)!important;
+}
+
+.dashboard-card-stats-header {
+    background: rgb(89, 84, 158)!important;
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Log in page</h3>
+
+<form action="" method="post" class="" style="background: rgb(135, 135, 211); padding: 1rem;">
+<label for="email">Email</label>
+<input id="email" type="text" name="email" class="form-control my-2" required value={{ email }}>
+<label for="password">Password</label>
+<input id="password" type="password" name="password" class="form-control my-2" required>
+<input type="submit" name="submit" value="Log In" class="btn btn-primary my-2">
+
+</form>
+
+{% endblock %}
+
+{% block sidebar %}
+
+
+{% endblock %}

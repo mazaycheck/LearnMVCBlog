@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="" method="post" class="p-3">
+    <input type="hidden" name="id">
+    <label for="">User</label>
+    <input type="text" id="" name="name" class="form-control my-2" value={{ inputdata.name }}>
+    <p class="text-danger">{{ errors.nameError }}</p>
+    <label for="">Email</label>
+    <input type="email" id="" name="email"  class="form-control my-2" value={{ inputdata.email }}>
+    <p class="text-danger">{{ errors.emailError }}</p>
+    <label for="">Password</label>
+    <input type="password" id="" name="password" class="form-control my-2">
+    <p class="text-danger">{{ errors.passwordError }}</p>
+    <label for="">Confirm Password</label>
+    <input type="password"  id="" name="password2" class="form-control my-2">
+    <label for="">Status</label>
+
+    <select name="statuslevel" class="form-control">
+        {% for status in statuslist %}
+            <option value="{{ status.level }}" {% if status.level  == 3 %}selected{% endif %}
+             >{{ status.status }}</option>
+        {% endfor %}
+    </select>
+
+    <input type="submit" name="submit" class="btn btn-primary my-2" value="add user">
+</form>
+
+{% endblock %}
+
+
+
+{% block sidebar %}
+{% include "Admin/sidebarmenu.html" %}
+{% endblock %}

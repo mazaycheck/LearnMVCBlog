@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for post in posts %}
+
+    <div class="card text-left my-3">
+      <img class="card-img-top" src="" alt="">
+      <div class="card-header d-flex justify-content-between">
+          <h6 class="m-0">{{ post.authorName }}</h6>
+          <p class="m-0">{{ post.date }}</p>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">{{ post.title }}</h4>
+        <div class="card-text">
+            <div style="height: 130px;overflow: auto; white-space: normal;text-overflow: ellipsis;">
+                {{ post.text|raw }}
+            </div>
+   
+        </div>                
+      </div>
+      <div class="footer ">
+            <ul class="nav bg-dark">
+                <li class="nav-item">
+                    <a href="/admin/manageposts/viewsinglepost/{{ post.id }}" class="nav-link"><i class="far fa-eye fa-2x">&nbsp; Preview</i></a>
+                </li>
+
+                <li class="nav-item">
+                    
+                    <a href="/admin/manageposts/update/{{ post.id }}" class="nav-link"><i class="fas fa-pen-nib fa-2x">&nbsp; Update</i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/manageposts/delete/{{ post.id }}" class="nav-link"><i class="far fa-trash-alt fa-2x">&nbsp; Delete</i></a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+{% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+{% include "Admin/sidebarmenu.html" %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card text-left">
+    <div class="card header">{{ post.title }}</div>
+  <img class="card-img-top" src="holder.js/100px180/" alt="">
+  <div class="card-body">
+      
+    <h4 class="card-title">{{ post.author }}</h4>
+    <p class="card-text">{{ post.text|raw }}</p>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+    {% include "Admin/sidebarmenu.html" %}
+{% endblock %}

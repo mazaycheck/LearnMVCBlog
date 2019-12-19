@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block topStories %}
+<div class="row my-2">
+    <div class="col-12 col-md-6 col-xl-4 topstories-block p-2">
+        <div class="topstories-block-content"></div>
+    </div>
+    
+ <div class="col-12 col-md-6 col-xl-4 topstories-block p-2">
+        <div class="topstories-block-content"></div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-xl-4 topstories-block p-2">
+        <div class="topstories-block-content"></div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-xl-4 topstories-block p-2">
+        <div class="topstories-block-content"></div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-xl-4 topstories-block p-2">
+        <div class="topstories-block-content"></div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-xl-4 topstories-block p-2">
+        <div class="topstories-block-content"></div>
+    </div> 
+    
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="row mt-3 mt-md-0">
+
+
+    <div id="section-hot-posts" class="col-12 px-2">
+   
+        <div id="section-hot-posts-content">
+           
+            {% for post in posts %}
+            <div class="card mb-3">
+                <div class="card-header d-flex justify-content-between"><h3>{{ post.title }}</h3><h4>{{ post.date }}</h4></div>
+                <div class="card-body">
+                
+                <h5>{{ post.text|raw }}</h5>
+            
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    {{ post.commentText }}
+                </div>
+            </div>
+            {% endfor %}
+      
+
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 section-small-blocks-posts mt-3 p-2">
+        <div class="section-small-blocks-posts-content"></div>
+    </div>
+
+    <div class="col-12 col-md-6 section-small-blocks-posts mt-3 p-2">
+        <div class="section-small-blocks-posts-content"></div>
+    </div>
+
+    <div id="section-recent-posts" class="col-12 p-2  mt-3">
+        <div id="section-recent-posts-content">
+
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Add New Post</h4>
+
+                <form action="/posts/addNewPost" method='post'>
+                    <label for="inp-title">Title</label>
+                    <input id="inp-title" type="text" name="title" class="form-control">
+                    <label for="inp-author">Author</label>
+                    <input id="inp-title" type="text" name="author" class="form-control">
+                    <label for="inp-text">Tetxt</label>
+                    <input id="inp-title" type="text" name="text" class="form-control">
+                    <input type="submit" name="submit" class="btn btn-primary mt-3" value="submit">
+                </form>
+              </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block sidebar %}
+
+<div id="sidebar-section" class="mt-3 mt-md-0">
+
+</div>
+
+{% endblock %}

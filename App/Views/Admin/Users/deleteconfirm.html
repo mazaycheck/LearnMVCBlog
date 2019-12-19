@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card my-3">
+    <div class="card-header">Confirm Delete User  {{ user.name }}</div>
+    <div class="card-body">
+    <a href="/admin/manageusers/delete/{{ user.id }}" class="btn btn-danger">Delete</a>
+    <a href="/admin/manageusers/" class="btn btn-warning">Cancel</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+{% include "Admin/sidebarmenu.html" %}
+{% endblock %}

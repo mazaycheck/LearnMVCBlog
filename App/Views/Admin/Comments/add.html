@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="" method="post">
+    <label for="">Name</label>
+    <input type="text" name="name" class="form-control">
+    <label for="">Comment</label>
+    <input type="text" name="text" class="form-control">
+    <label for="">Email</label>
+    <input type="email" name="email" class="form-control">
+    <label for="">post id</label>
+    <input type="text" name="post" class="form-control">
+    <input type="submit" name="submit" class="btn btn-info">
+</form>
+{% endblock %}
+
+{% block sidebar %}
+
+{% include "Admin/sidebarmenu.html" %}
+
+{% endblock %}

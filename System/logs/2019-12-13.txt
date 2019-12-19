@@ -1,0 +1,393 @@
+[13-Dec-2019 08:15:09 Europe/Berlin] Wrong parameters for ErrorException([string $message [, long $code, [ long $severity, [ string $filename, [ long $lineno  [, Throwable $previous = NULL]]]]]])
+[13-Dec-2019 08:15:24 Europe/Berlin] Wrong parameters for ErrorException([string $message [, long $code, [ long $severity, [ string $filename, [ long $lineno  [, Throwable $previous = NULL]]]]]])
+[13-Dec-2019 08:16:06 Europe/Berlin] Wrong parameters for ErrorException([string $message [, long $code, [ long $severity, [ string $filename, [ long $lineno  [, Throwable $previous = NULL]]]]]])
+[13-Dec-2019 08:16:34 Europe/Berlin] Wrong parameters for ErrorException([string $message [, long $code, [ long $severity, [ string $filename, [ long $lineno  [, Throwable $previous = NULL]]]]]])
+[13-Dec-2019 08:17:39 Europe/Berlin] Non-static method System\Libs\Auth::login() should not be called statically
+[13-Dec-2019 09:55:15 Europe/Berlin] Undefined property: App\Models\User::$statuslevel
+[13-Dec-2019 10:01:59 Europe/Berlin] Undefined property: App\Models\User::$statuslevel
+C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Auth.php
+13
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Auth.php(13): System\Helpers\Errors::errorHandler(8, 'Undefined prope...', 'C:\\Users\\User\\O...', 13, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Account.php(37): System\Libs\Auth::login(Object(App\Models\User))
+#2 [internal function]: App\Controllers\Account->signupAction('')
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#4 [internal function]: System\Libs\BaseController->__call('signup', Array)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('account/signup/')
+#7 {main}
+[13-Dec-2019 10:52:38 Europe/Berlin] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mvcblog`.`comments`, CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+102
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(102): PDOStatement->execute()
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(32): System\Libs\Model->insertData('comments', Array)
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(16): App\Models\Comment->saveComment()
+#3 [internal function]: App\Controllers\Admin\ManageComments->addAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('add', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 10:52:51 Europe/Berlin] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mvcblog`.`comments`, CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+102
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(102): PDOStatement->execute()
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(32): System\Libs\Model->insertData('comments', Array)
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(16): App\Models\Comment->saveComment()
+#3 [internal function]: App\Controllers\Admin\ManageComments->addAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('add', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 11:19:34 Europe/Berlin] Undefined index: 
+C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+115
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(115): System\Helpers\Errors::errorHandler(8, 'Undefined index...', 'C:\\Users\\User\\O...', 115, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(44): System\Libs\Model::getEntries('comments')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(28): App\Models\Comment::showallcomments()
+#3 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 11:20:46 Europe/Berlin] Undefined index: 
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 115
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(115): System\Helpers\Errors::errorHandler(8, 'Undefined index...', 'C:\\Users\\User\\O...', 115, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(44): System\Libs\Model::getEntries('comments')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(28): App\Models\Comment::showallcomments()
+#3 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 11:21:41 Europe/Berlin] Array to string conversion
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 118
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(118): System\Helpers\Errors::errorHandler(8, 'Array to string...', 'C:\\Users\\User\\O...', 118, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(44): System\Libs\Model::getEntries('comments')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(28): App\Models\Comment::showallcomments()
+#3 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 11:56:08 Europe/Berlin] Unexpected token "operator" of value "=" ("end of statement block" expected).
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 25
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\IfTokenParser.php(38): Twig\TokenStream->expect(3)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#11 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#12 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#14 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#16 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#17 {main}
+********************************
+[13-Dec-2019 11:56:11 Europe/Berlin] Unexpected token "operator" of value "=" ("end of statement block" expected).
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 25
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\IfTokenParser.php(38): Twig\TokenStream->expect(3)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#11 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#12 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#14 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#16 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#17 {main}
+********************************
+[13-Dec-2019 11:56:41 Europe/Berlin] Unexpected token "operator" of value "=" ("end of statement block" expected).
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 27
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\IfTokenParser.php(38): Twig\TokenStream->expect(3)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\ForTokenParser.php(40): Twig\Parser->subparse(Array)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ForTokenParser->parse(Object(Twig\Token))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#11 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#14 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#16 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#17 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#18 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#19 {main}
+********************************
+[13-Dec-2019 11:56:43 Europe/Berlin] Unexpected token "operator" of value "=" ("end of statement block" expected).
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 27
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\IfTokenParser.php(38): Twig\TokenStream->expect(3)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\IfTokenParser->parse(Object(Twig\Token))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\ForTokenParser.php(40): Twig\Parser->subparse(Array)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ForTokenParser->parse(Object(Twig\Token))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#11 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#14 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#16 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#17 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#18 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#19 {main}
+********************************
+[13-Dec-2019 11:58:13 Europe/Berlin] A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 46
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(353): Twig\Parser->filterBodyNodes(Object(Twig\Node\TextNode), false)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(97): Twig\Parser->filterBodyNodes(Object(Twig\Node\Node))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#9 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#11 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#14 {main}
+********************************
+[13-Dec-2019 12:08:15 Europe/Berlin] SQLSTATE[HY000]: General error: 2031 
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 45
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(45): PDOStatement->execute(Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(45): System\Libs\Model::prepareAndExecute('UPDATE comments...')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(35): App\Models\Comment::approveComment('6')
+#3 [internal function]: App\Controllers\Admin\ManageComments->approve('6')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#6 {main}
+********************************
+[13-Dec-2019 13:50:26 Europe/Berlin] SQLSTATE[HY000]: General error: 2031 
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 45
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(45): PDOStatement->execute(Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(52): System\Libs\Model::prepareAndExecute('DELETE from com...')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(36): System\Libs\Model::deleteEntry('comments', '6')
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(56): App\Models\Comment::deletecomment('6')
+#4 [internal function]: App\Controllers\Admin\ManageComments->delete('6')
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#7 {main}
+********************************
+[13-Dec-2019 13:53:37 Europe/Berlin] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'comment.id' in 'order clause'
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 44
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(44): PDO->prepare('SELECT comments...')
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(55): System\Libs\Model::prepareAndExecute('SELECT comments...')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(28): App\Models\Comment::showallcomments()
+#3 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 13:54:01 Europe/Berlin] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'comment.id' in 'order clause'
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 44
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(44): PDO->prepare('SELECT comments...')
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Comment.php(55): System\Libs\Model::prepareAndExecute('SELECT comments...')
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(28): App\Models\Comment::showallcomments()
+#3 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#8 {main}
+********************************
+[13-Dec-2019 14:12:46 Europe/Berlin] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php
+Line : 44
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Model.php(44): PDO->prepare('SELECT users.na...')
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Models\Post.php(73): System\Libs\Model::prepareAndExecute('SELECT users.na...', Array)
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManagePosts.php(32): App\Models\Post->getAuthorById(14)
+#3 [internal function]: App\Controllers\Admin\ManagePosts->indexAction('')
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#5 [internal function]: System\Libs\BaseController->__call('index', Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managepos...')
+#8 {main}
+********************************
+[13-Dec-2019 14:26:03 Europe/Berlin] An exception has been thrown during the rendering of a template ("Array to string conversion").
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 22
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(358) : eval()'d code(89): Twig\Template->displayBlock('content', Array, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(396): __TwigTemplate_93cef0ef1a193695dfea0360ceccb0a83fcae9f95533d066d478c2894a546d2c->doDisplay(Array, Array)
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(369): Twig\Template->displayWithErrorHandling(Array, Array)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(358) : eval()'d code(43): Twig\Template->display(Array, Array)
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(396): __TwigTemplate_2f1f617314abb391dc2a98fa8f64117ce0ce38530cc3d4562cb5bf53162dbedd->doDisplay(Array, Array)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(369): Twig\Template->displayWithErrorHandling(Array, Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(381): Twig\Template->display(Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#11 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#13 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#14 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#16 {main}
+********************************
+[13-Dec-2019 14:26:05 Europe/Berlin] An exception has been thrown during the rendering of a template ("Array to string conversion").
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 22
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(358) : eval()'d code(89): Twig\Template->displayBlock('content', Array, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(396): __TwigTemplate_93cef0ef1a193695dfea0360ceccb0a83fcae9f95533d066d478c2894a546d2c->doDisplay(Array, Array)
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(369): Twig\Template->displayWithErrorHandling(Array, Array)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(358) : eval()'d code(43): Twig\Template->display(Array, Array)
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(396): __TwigTemplate_2f1f617314abb391dc2a98fa8f64117ce0ce38530cc3d4562cb5bf53162dbedd->doDisplay(Array, Array)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(369): Twig\Template->displayWithErrorHandling(Array, Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(381): Twig\Template->display(Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#11 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#13 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#14 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#16 {main}
+********************************
+[13-Dec-2019 14:28:38 Europe/Berlin] An exception has been thrown during the rendering of a template ("Array to string conversion").
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 22
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(358) : eval()'d code(89): Twig\Template->displayBlock('content', Array, Array)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(396): __TwigTemplate_93cef0ef1a193695dfea0360ceccb0a83fcae9f95533d066d478c2894a546d2c->doDisplay(Array, Array)
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(369): Twig\Template->displayWithErrorHandling(Array, Array)
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(358) : eval()'d code(43): Twig\Template->display(Array, Array)
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(396): __TwigTemplate_2f1f617314abb391dc2a98fa8f64117ce0ce38530cc3d4562cb5bf53162dbedd->doDisplay(Array, Array)
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(369): Twig\Template->displayWithErrorHandling(Array, Array)
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Template.php(381): Twig\Template->display(Array)
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TemplateWrapper.php(40): Twig\Template->render(Array, Array)
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\TemplateWrapper->render(Array)
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#11 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#13 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#14 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#16 {main}
+********************************
+[13-Dec-2019 14:35:28 Europe/Berlin] Unknown "M" filter.
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 21
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(549): Twig\ExpressionParser->getFilterNodeClass('M', 21)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(534): Twig\ExpressionParser->parseFilterExpressionRaw(Object(Twig\Node\Expression\GetAttrExpression))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(392): Twig\ExpressionParser->parseFilterExpression(Object(Twig\Node\Expression\GetAttrExpression))
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(284): Twig\ExpressionParser->parsePostfixExpression(Object(Twig\Node\Expression\GetAttrExpression))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\ForTokenParser.php(40): Twig\Parser->subparse(Array)
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ForTokenParser->parse(Object(Twig\Token))
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#11 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#14 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#16 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#17 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#18 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#19 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#20 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#21 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#22 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#23 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#24 {main}
+********************************
+[13-Dec-2019 14:35:29 Europe/Berlin] Unknown "M" filter.
+In File : C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Views\Admin\Comments\manage.html
+Line : 21
+Trace :
+#0 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(549): Twig\ExpressionParser->getFilterNodeClass('M', 21)
+#1 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(534): Twig\ExpressionParser->parseFilterExpressionRaw(Object(Twig\Node\Expression\GetAttrExpression))
+#2 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(392): Twig\ExpressionParser->parseFilterExpression(Object(Twig\Node\Expression\GetAttrExpression))
+#3 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(284): Twig\ExpressionParser->parsePostfixExpression(Object(Twig\Node\Expression\GetAttrExpression))
+#4 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(175): Twig\ExpressionParser->parsePrimaryExpression()
+#5 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\ExpressionParser.php(70): Twig\ExpressionParser->getPrimary()
+#6 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(139): Twig\ExpressionParser->parseExpression()
+#7 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\ForTokenParser.php(40): Twig\Parser->subparse(Array)
+#8 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\ForTokenParser->parse(Object(Twig\Token))
+#9 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(45): Twig\Parser->subparse(Array, true)
+#10 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#11 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#12 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#13 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#14 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#15 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'Admin/Comments/...')
+#16 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('Admin/Comments/...')
+#17 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\View.php(21): Twig\Environment->render('Admin/Comments/...', Array)
+#18 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\App\Controllers\Admin\ManageComments.php(31): System\Libs\View::renderTemplate('Admin/Comments/...', Array)
+#19 [internal function]: App\Controllers\Admin\ManageComments->manageAction('')
+#20 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\BaseController.php(21): call_user_func_array(Array, Array)
+#21 [internal function]: System\Libs\BaseController->__call('manage', Array)
+#22 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\System\Libs\Router.php(78): call_user_func_array(Array, Array)
+#23 C:\Users\User\OneDrive\PHP\UDEMY\LearnMVCBlog\Public\index.php(22): System\Libs\Router->executeUrl('admin/managecom...')
+#24 {main}
+********************************
